@@ -3,21 +3,21 @@ Crea una copia local del repositorio
 Ej. git clone https://github.com/iampedrorf/git-ISSC-412-2023.git
 
 - git status
-NOs devuelve el estado actual del repositorio
+NOs devuelve el estado actual del repositorio.
 Ej. git status
 
 - git add 
-Preparar cambios(linea por linea) para ser incluidos en un commit
+Preparar cambios(linea por linea) para ser incluidos en un commit.
 Ej 1. git add notas.txt (agrega solo un archivo)
 Ej 2. git add . (agrega todos los archivos)
 
 - git commit
-Crear un commit con los cmbios que preparamos con el comando git add
+Crear un commit con los cmbios que preparamos con el comando git add.
 Tiene un ID de commit y un mensaje
 Ej. git commit -m "<mensaje_commit>"
 
 -git push
-Sincroniza la rama remota con lo que hay en la local. EN OTRAS PALABRAS SUBE LOS COMMITS QUE HAY EN LA LOCAL Y QUE FALTAN EN LA REMOTA
+Sincroniza la rama remota con lo que hay en la local. EN OTRAS PALABRAS SUBE LOS COMMITS QUE HAY EN LA LOCAL Y QUE FALTAN EN LA REMOTA.
 Ej. git push
 
 - git fetch
@@ -25,7 +25,7 @@ Trae los metadatos sobre commits, ramas, refs,, etc. de un repositorio remoto. N
 Ej. git fetch
 
 - git pull
-Sincroniza la rama local con lo que hay en la remota. EN OTRAS PALANRAS DESCARGA LOS COMMITS QUE HAY EN LA REMOTA Y QUE FALTAN EN LA LOCAL
+Sincroniza la rama local con lo que hay en la remota. EN OTRAS PALANRAS DESCARGA LOS COMMITS QUE HAY EN LA REMOTA Y QUE FALTAN EN LA LOCAL.
 Ej. git pull
 
 
@@ -36,3 +36,11 @@ Integracion de ramas:
 Para este fin, se utiliza la operacion "merge".
 Un merge combina los commits de una rama hacia otra
 en un solo commit conocido como un "merge commit".
+
+Resolución de conflictos:
+    Estrategias:
+        1. Merge commit: crea un merge commit con cambios aplicados en el orden que el desarrollador elija
+        2. Rebase: cambia el punto de origen de un rama resolviendo conflictos durante la operacion. Rquiere un "force push" para sobreescribir la rama remota.
+
+Pull request:
+Solicita los cambios en una rama a otro colaborador, previo a la integración de las 2 ramas (merge).

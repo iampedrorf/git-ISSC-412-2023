@@ -27,3 +27,7 @@ Ej. git fetch
 - git pull
 Sincroniza la rama local con lo que hay en la remota. EN OTRAS PALANRAS DESCARGA LOS COMMITS QUE HAY EN LA REMOTA Y QUE FALTAN EN LA LOCAL
 Ej. git pull
+
+
+Ramas:
+TODO: Agregar definición de ramas
